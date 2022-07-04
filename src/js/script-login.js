@@ -42,7 +42,7 @@ function checkLogin() {
                     <form id="formLogin">
                         <p class="hint-text">Sign in with your social media account</p>
                         <div class="form-group social-btn clearfix">
-                            <a href="#" class="btn btn-secondary facebook-btn float-left"><i class="fa fa-facebook"></i>
+                            <a onlogin="checkLoginState()" class="btn btn-secondary facebook-btn float-left"><i class="fa fa-facebook"></i>
                                 Facebook</a>
                             <a href="#" class="btn btn-secondary twitter-btn float-right"><i class="fa fa-twitter"></i>
                                 Twitter</a>
