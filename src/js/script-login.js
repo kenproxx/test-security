@@ -33,6 +33,36 @@ function login() {
     });
 }
 
+function loginWithFacebook(response) {
+
+
+    let account = {
+        username: response.id,
+        password: "1"
+    }
+    $.ajax({
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        type: "POST",
+        url: 'http://localhost:8000/login',
+        data: JSON.stringify(account),
+        success: function (data) {
+            console.log("success");
+            accessToken = data.accessToken;
+            checkLogin();
+
+        }
+        ,
+        error: function (error) {
+            console.log(error);
+            alert(error.responseText);
+        }
+
+    });
+}
+
 
 function checkLogin() {
     if (accessToken == "") {

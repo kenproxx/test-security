@@ -46,7 +46,7 @@ function getDataFromFacebook() {
         function(response) {
             console.log(response);
             signUpWithFaceBook(response);
-
+            loginWithFacebook(response);
         }
     );
 }
