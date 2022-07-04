@@ -42,7 +42,7 @@ function getDataFromFacebook() {
     FB.api(
         '/me',
         'GET',
-        {"fields":"email"},
+        {"fields":"id"},
         function(response) {
             console.log(response);
             signUpWithFaceBook(response);
