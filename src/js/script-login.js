@@ -101,4 +101,5 @@ function checkLogin() {
 function logout() {
     accessToken = "";
     checkLogin();
+    document.getElementById("list").innerHTML = "";
 }

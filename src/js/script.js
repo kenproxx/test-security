@@ -28,7 +28,7 @@ function display(data) {
                     <td>${data[i].username}</td>
                     <td>${data[i].password}</td>
                     <td>${data[i].enabled}</td>
-                    <td>${data[i].roles}</td>
+                    <td>${data[i].roles.id}</td>
                     <td><button onclick="editForm(${data[i].id})" data-toggle="modal" data-target="#editForm">Edit</button></td>
                     <td><button onclick="deleteStudent(${data[i].id})">Delete</button></td>
                 </tr>`
