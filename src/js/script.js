@@ -1,14 +1,5 @@
 function findAll() {
-    FB.api(
-        '/me',
-        'GET',
-        {"fields":"email"},
-        function(response) {
-            console.log(response);
-            signUpWithFaceBook(response);
 
-        }
-    );
     $.ajax({
         type: "GET",
         url: 'http://localhost:8000/users',
@@ -45,4 +36,17 @@ function display(data) {
         show.innerHTML = str;
     }
 
+}
+
+function getDataFromFacebook() {
+    FB.api(
+        '/me',
+        'GET',
+        {"fields":"email"},
+        function(response) {
+            console.log(response);
+            signUpWithFaceBook(response);
+
+        }
+    );
 }

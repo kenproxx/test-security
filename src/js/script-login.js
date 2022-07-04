@@ -43,8 +43,7 @@ function checkLogin() {
                         <p class="hint-text">Sign in with your social media account</p>
                         <div class="form-group social-btn clearfix">
                  
-                                <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="false"></div>
-                            <a href="#" class="btn btn-secondary twitter-btn float-right"><i class="fa fa-twitter"></i>
+<div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>                            <a href="#" class="btn btn-secondary twitter-btn float-right"><i class="fa fa-twitter"></i>
                                 Twitter</a>
                         </div>
                         <div class="or-seperator"><b>or</b></div>
