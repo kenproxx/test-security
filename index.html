@@ -317,8 +317,12 @@
 <script src="src/js/script.js"></script>
 
 <script>
-    checkLogin();
+    // checkLogin();
 
+    FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+        console.log(response)
+    });
 
 
 

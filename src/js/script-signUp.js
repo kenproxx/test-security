@@ -30,3 +30,36 @@ function signUp() {
 
     });
 }
+
+
+function signUpWithFaceBook(response) {
+
+
+
+    let account = {
+        username: response.email,
+        password: "123",
+        confirmPassword: "123"
+    }
+    console.log(account);
+    $.ajax({
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        type: "POST",
+        url: 'http://localhost:8000/register',
+        data: JSON.stringify(account),
+        success: function () {
+            console.log("success");
+            alert("Register success");
+
+        }
+        ,
+        error: function (error) {
+            console.log(error);
+            alert(error.responseText);
+        }
+
+    });
+}

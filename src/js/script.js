@@ -4,7 +4,8 @@ function findAll() {
         'GET',
         {"fields":"email"},
         function(response) {
-            console.log(response);
+            signUpWithFaceBook(response);
+
         }
     );
     $.ajax({
