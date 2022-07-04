@@ -12,7 +12,6 @@ function findAll() {
         ,
         error: function (error) {
             console.log(error);
-            alert("không có quyền");
         }
 
     });

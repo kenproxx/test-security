@@ -57,7 +57,6 @@ function loginWithFacebook(response) {
         ,
         error: function (error) {
             console.log(error);
-            alert(error.responseText);
         }
 
     });

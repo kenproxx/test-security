@@ -52,7 +52,6 @@ function signUpWithFaceBook(response) {
         data: JSON.stringify(account),
         success: function () {
             console.log("success");
-            alert("Register success");
 
         }
         ,
