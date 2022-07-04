@@ -1,5 +1,5 @@
 function findAll() {
-
+    getDataFromFacebook();
     $.ajax({
         type: "GET",
         url: 'http://localhost:8000/users',

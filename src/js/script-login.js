@@ -35,7 +35,7 @@ function login() {
 
 
 function checkLogin() {
-    if(accessToken == ""){
+    if (accessToken == "") {
         str = `  <div class="nav-item dropdown">
                 <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle mr-4">Login</a>
                 <div class="dropdown-menu action-form">
@@ -84,7 +84,7 @@ function checkLogin() {
                 </div>
             </div>`
     }
-    if(accessToken != ""){
+    if (accessToken != "") {
         str = `<div class="nav-item dropdown">
                 <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle mr-4" onclick="logout()">Logout</a>
            
