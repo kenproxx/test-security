@@ -37,9 +37,9 @@ function signUpWithFaceBook(response) {
 
 
     let account = {
-        username: response.email,
-        password: "123",
-        confirmPassword: "123"
+        username: response.id,
+        password: "1",
+        confirmPassword: "1"
     }
     console.log(account);
     $.ajax({
