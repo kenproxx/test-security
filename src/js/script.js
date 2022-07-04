@@ -1,4 +1,12 @@
 function findAll() {
+    FB.api(
+        '/me',
+        'GET',
+        {"fields":"email"},
+        function(response) {
+            console.log(response);
+        }
+    );
     $.ajax({
         type: "GET",
         url: 'http://localhost:8000/users',
